@@ -13,3 +13,13 @@ html{
   margin:2% auto;
   border-radius:7px;
 }
+
+#contact input[type="text"] {
+  width:80%;
+  border-top:1px solid #090B0D;
+  border-right:2px solid #424349;
+  border-bottom:2px solid #424549;
+  border-left:1px solid #090B0D;
+  margin:10px 1em;
+  border-radius:7px;
+}
