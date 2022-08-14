@@ -1,0 +1,15 @@
+/* -- GENERIC STYLES --*/
+html{
+  font-family:sans-serif;
+  font-size: 62.5%;
+}
+
+
+
+/*--FORM STYLES--*/
+#contact form{
+  width:70%;
+  border:1px solid #808080;
+  margin:2% auto;
+  border-radius:7px;
+}
