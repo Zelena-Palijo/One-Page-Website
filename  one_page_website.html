@@ -31,16 +31,16 @@
 		</div>
 		<!-- END HOME -->
 		
-		<!-- GALLERY -->
+		<!-- GALLERY ***Photo containers include images used to open lightbox -->
 		<section>
 			<div id="gallery">
 				<h1>Gallery</h1>
 				<div>
 				
 					<!-- PHOTO CONTAINER 1 -->
-					<div>
-						<div>
-							<img src="./images/thumb-2/thumbnail_1.webp" alt="English breakfast">
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb-2/thumbnail_1.webp" alt="English breakfast" onclick="openModal();currentSlide(1)" class="hover-shadow">
 							<div>
 								<h3>black tea</h3>
 								<p>Click to Order</p>
@@ -50,9 +50,9 @@
 					<!-- END PHOTO CONTAINER 1 -->
 
 					<!-- PHOTO CONTAINER 2 -->
-					<div>
-						<div>
-							<img src="./images/thumb-2/thumbnail_2.webp" alt="jamsine tea">
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb-2/thumbnail_2.webp" alt="jamsine tea" onclick="openModal();currentSlide(2)" class="hover-shadow">
 							<div>
 								<h3>green tea</h3>
 								<p>Click to Order</p>
@@ -62,9 +62,9 @@
 					<!-- END PHOTO CONTAINER 2 -->
 
 					<!-- PHOTO CONTAINER 3 -->
-					<div>
-						<div>
-							<img src="./images/thumb-2/thumbnail_3.webp" alt="oolong tea">
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb-2/thumbnail_3.webp" alt="oolong tea" onclick="openModal();currentSlide(3)" class="hover-shadow">
 							<div>
 								<h3>oolong tea</h3>
 								<p>Click to Order</p>
@@ -74,9 +74,9 @@
 					<!-- END PHOTO CONTAINER 3 -->
 
 					<!-- PHOTO CONTAINER 4 -->
-					<div>
-						<div>
-							<img src="./images/thumb-2/thumbnail_4.webp" alt="white tea">
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb-2/thumbnail_4.webp" alt="white tea" onclick="openModal();currentSlide(9)" class="hover-shadow">
 							<div>
 								<h3>white tea</h3>
 								<p>Click to Order</p>
@@ -86,9 +86,9 @@
 					<!-- END PHOTO CONTAINER 4 -->
 
 					<!-- PHOTO CONTAINER 5 -->
-					<div>
-						<div>
-							<img src="./images/thumb-2/thumbnail_5.webp" alt="pu-er">
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb-2/thumbnail_5.webp" alt="pu-er" onclick="openModal();currentSlide(5)" class="hover-shadow">
 							<div>
 								<h3>pu-er tea</h3>
 								<p>Click to Order</p>
@@ -98,9 +98,9 @@
 					<!-- END PHOTO CONTAINER 5 -->
 
 					<!-- PHOTO CONTAINER 6 -->
-					<div>
-						<div>
-							<img src="./images/thumb-2/thumbnail_6.webp" alt="herbal tea">
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb-2/thumbnail_6.webp" alt="herbal tea" onclick="openModal();currentSlide(6)" class="hover-shadow">
 							<div>
 								<h3>herbal teas</h3>
 								<p>Click to Order</p>
@@ -110,9 +110,9 @@
 					<!-- END PHOTO CONTAINER 6 -->
 
 					<!-- PHOTO CONTAINER 7 -->
-					<div>
-						<div>
-							<img src="./images/thumb-2/thumbnail_7.webp" alt="rooibos">
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb-2/thumbnail_7.webp" alt="rooibos" onclick="openModal();currentSlide(7)" class="hover-shadow">
 							<div>
 								<h3>rooibos tea</h3>
 								<p>Click to Order</p>
@@ -122,9 +122,9 @@
 					<!-- END PHOTO CONTAINER 7 -->
 
 					<!-- PHOTO CONTAINER 8 -->
-					<div>
-						<div>
-							<img src="./images/thumb-2/thumbnail_8.webp" alt="yellow tea">
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb-2/thumbnail_8.webp" alt="yellow tea" onclick="openModal();currentSlide(8)" class="hover-shadow">
 							<div>
 								<h3>yellow tea</h3>
 								<p>Click to Order</p>
@@ -134,9 +134,9 @@
 					<!-- END PHOTO CONTAINER 8 -->
 
 					<!-- PHOTO CONTAINER 9 -->
-					<div>
-						<div>
-							<img src="./images/thumb-2/thumbnail_9.webp" alt="speciality blends">
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb-2/thumbnail_9.webp" alt="speciality blends" onclick="openModal();currentSlide(9)" class="hover-shadow">
 							<div>
 								<h3>specialty blends</h3>
 								<p>Click to Order</p>
@@ -148,6 +148,86 @@
 			</div>
 		</section>
 		<!-- END GALLERY -->
+
+		<!-- The MODAL/LIGHTBOX -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		
+				<div class="mySlides">
+					<div class="numbertext">1 / 9</div>
+					<img src="./images/thumb-2/thumbnail_1.webp" style="width:100%">
+				</div>
+		
+				<div class="mySlides">
+					<div class="numbertext">2 / 9</div>
+					<img src="./images/thumb-2/thumbnail_2.webp" style="width:100%">
+				</div>
+		
+				<div class="mySlides">
+					<div class="numbertext">3 / 9</div>
+					<img src="./images/thumb-2/thumbnail_3.webp" style="width:100%">
+				</div>
+		
+				<div class="mySlides">
+					<div class="numbertext">4 / 9</div>
+					<img src="./images/thumb-2/thumbnail_4.webp" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">5 / 9</div>
+					<img src="./images/thumb-2/thumbnail_5.webp" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">6 / 9</div>
+					<img src="./images/thumb-2/thumbnail_6.webp" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">7 / 9</div>
+					<img src="./images/thumb-2/thumbnail_7.webp" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">8 / 9</div>
+					<img src="./images/thumb-2/thumbnail_8.webp" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">9 / 9</div>
+					<img src="./images/thumb-2/thumbnail_9.webp" style="width:100%">
+				</div>
+		
+				<!-- Next/previous controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10099;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+				<!-- Caption text -->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+		
+				<!-- Thumbnail image controls -->
+				<div class="column">
+					<img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+				</div>
+		
+				<div class="column">
+					<img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
+				</div>
+		
+				<div class="column">
+					<img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+				</div>
+		
+				<div class="column">
+					<img class="demo" src="img9.jpg" onclick="currentSlide(9)" alt="Lights">
+				</div>
+			</div>
+		</div>
+
+		<!-- END The MODAL/LIGHTBOX -->
 
 		<!-- CONTACT US -->
 		<section>
